@@ -1,0 +1,25 @@
+drop database proyectoprimerjavafx;
+create database proyectoprimerjavafx;
+use proyectoprimerjavafx;
+
+create table usuario (
+id_usuario int not null auto_increment,
+nombre varchar (128) not null,
+apellidos varchar (128) not null,
+usuario varchar (128) not null,
+correo varchar (128) not null,
+contrasena varchar (128) not null,
+permiso int null,
+PRIMARY KEY (id_usuario)
+);
+
+create table leyendas (
+id_leyendas int not null auto_increment,
+nombre varchar (128) not null,
+imagen varchar (128) not null,
+fechas varchar (128) not null,
+descripcion varchar (128) not null,
+PRIMARY KEY (id_leyendas)
+);
+
+insert into usuario (nombre, apellidos, usuario, correo, contrasena)  values (?,?,?,?,?);

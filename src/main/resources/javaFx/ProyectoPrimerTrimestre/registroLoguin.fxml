@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="615.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaFx.ProyectoPrimerTrimestre.RegistroLoginController">
+   <children>
+      <SplitPane dividerPositions="0.22022838499184338" orientation="VERTICAL" prefHeight="615.0" prefWidth="1200.0" style="-fx-background-color: #2C2797;">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="102.0">
+               <children>
+                  <ImageView fitHeight="135.0" fitWidth="1198.0" opacity="0.72" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../imagenes/galaxia2.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="197.0" fitWidth="536.0" layoutX="362.0" layoutY="-20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../imagenes/Titulo6.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="428.0" prefWidth="1198.0" style="-fx-background-color: linear-gradient(to left, #5B2C6F, #D2B4DE);">
+               <children>
+                  <HBox prefHeight="45.0" prefWidth="1200.0">
+                     <children>
+                        <Button fx:id="inicio" mnemonicParsing="false" onAction="#swichToIndex" prefHeight="44.0" prefWidth="321.0" style="-fx-background-color:linear-gradient(to top, #174A87,#A1C0C8 );" text="Inicio">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <effect>
+                              <Lighting diffuseConstant="2.0" specularConstant="2.0" specularExponent="40.0" surfaceScale="10.0">
+                                 <bumpInput>
+                                    <Shadow blurType="GAUSSIAN" color="#0a0a0a" height="24.22" radius="11.6125" width="24.23" />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant azimuth="250.63" elevation="149.81" />
+                                 </light>
+                              </Lighting>
+                           </effect>
+                        </Button>
+                        <Button fx:id="leyenda" mnemonicParsing="false" onAction="#swichToLeyendas" prefHeight="44.0" prefWidth="373.0" style="-fx-background-color: linear-gradient(to top, #174A87,#A1C0C8 );" text="Leyendas">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <effect>
+                              <Lighting diffuseConstant="2.0" specularConstant="2.0" specularExponent="40.0" surfaceScale="10.0">
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant azimuth="250.63" elevation="149.81" />
+                                 </light>
+                              </Lighting>
+                           </effect>
+                        </Button>
+                        <Button fx:id="crearLeyenda" mnemonicParsing="false" onAction="#swichToCrear" prefHeight="44.0" prefWidth="374.0" style="-fx-background-color: linear-gradient(to top, #174A87,#A1C0C8 );" text="Crear Leyendas">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <effect>
+                              <Lighting diffuseConstant="2.0" specularConstant="2.0" specularExponent="40.0" surfaceScale="10.0">
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant azimuth="250.63" elevation="149.81" />
+                                 </light>
+                              </Lighting>
+                           </effect>
+                        </Button>
+                        <Button fx:id="registroLoguin" mnemonicParsing="false" onAction="#swichToRegLog" prefHeight="44.0" prefWidth="394.0" style="-fx-background-color: linear-gradient(to top, #174A87,#A1C0C8 );" text="Registro/Login">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <effect>
+                              <Lighting diffuseConstant="2.0" specularConstant="2.0" specularExponent="40.0" surfaceScale="10.0">
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant azimuth="250.63" elevation="149.81" />
+                                 </light>
+                              </Lighting>
+                           </effect>
+                        </Button>
+                     </children>
+                  </HBox>
+                <AnchorPane layoutX="-3.0" layoutY="41.0" minHeight="0.0" minWidth="0.0" prefHeight="423.0" prefWidth="712.0">
+                     <children>
+                        <Text fill="#230980" layoutX="156.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="REGISTRO" textAlignment="CENTER" wrappingWidth="373.205078125">
+                           <font>
+                              <Font size="26.0" />
+                           </font>
+                        </Text>
+                        <GridPane layoutX="49.0" layoutY="67.0" prefHeight="308.0" prefWidth="575.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="319.0" minWidth="10.0" prefWidth="151.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="433.0" minWidth="10.0" prefWidth="424.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="277.0" minHeight="0.0" prefHeight="42.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="427.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="528.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="528.0" minHeight="10.0" prefHeight="52.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="528.0" minHeight="10.0" prefHeight="43.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="528.0" minHeight="10.0" prefHeight="55.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="528.0" minHeight="7.0" prefHeight="11.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="528.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre" textAlignment="CENTER" wrappingWidth="181.205078125">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="nombre" prefHeight="0.0" prefWidth="424.0" GridPane.columnIndex="1" />
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Apellidos" textAlignment="CENTER" wrappingWidth="176.205078125" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="apellidos" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Correo" textAlignment="CENTER" wrappingWidth="188.205078125" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="correo" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Contraseña" textAlignment="CENTER" wrappingWidth="159.205078125" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#fcfcfc" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuario" textAlignment="CENTER" wrappingWidth="205.205078125" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="usuario" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Confirmar Contraseña" textAlignment="CENTER" wrappingWidth="159.205078125" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Text>
+                              <StackPane alignment="CENTER_RIGHT" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                 <children>
+                                    <TextField fx:id="passwordTextField" />
+                                    <PasswordField fx:id="contrasena" />
+                                    <CheckBox fx:id="ckecContrasena" mnemonicParsing="false" onAction="#changeVisibility" />
+                                 </children>
+                              </StackPane>
+                              <StackPane alignment="CENTER_RIGHT" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                 <children>
+                                    <TextField fx:id="confPasswordTextField" />
+                                    <PasswordField fx:id="configContrasena" />
+                                    <CheckBox fx:id="checkConf" mnemonicParsing="false" onAction="#changeVisibility" prefHeight="27.0" prefWidth="0.0" />
+                                 </children>
+                              </StackPane>
+                           </children>
+                        </GridPane>
+                        <Button fx:id="envio" layoutX="49.0" layoutY="358.0" mnemonicParsing="false" onAction="#EnviarMySql" prefHeight="49.0" prefWidth="183.0" style="-fx-background-color: linear-gradient(to left,#889FD8,#113899 );" text="Enviar" textFill="WHITE">
+                           <effect>
+                              <InnerShadow blurType="TWO_PASS_BOX" choke="0.4" color="#320779ed" height="55.31" radius="47.6275" width="137.2" />
+                           </effect></Button>
+                        <TextField fx:id="errorField" layoutX="254.0" layoutY="363.0" prefHeight="39.0" prefWidth="438.0" style="visibility: hiden;">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font></TextField>
+                     </children>
+                  </AnchorPane>
+                <AnchorPane layoutX="708.0" layoutY="41.0" minHeight="0.0" minWidth="0.0" prefHeight="432.0" prefWidth="489.0">
+                     <children>
+                        <Text fill="#2b129e" layoutX="66.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOGIN" textAlignment="CENTER" wrappingWidth="373.205078125">
+                           <font>
+                              <Font size="26.0" />
+                           </font>
+                        </Text>
+                        <GridPane layoutX="139.0" layoutY="111.0" prefHeight="223.0" prefWidth="244.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="237.0" minWidth="10.0" prefWidth="112.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="162.0" minHeight="8.0" prefHeight="36.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="326.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="386.0" minHeight="2.0" prefHeight="2.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="386.0" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="386.0" minHeight="10.0" prefHeight="34.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="386.0" minHeight="10.0" prefHeight="67.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="386.0" minHeight="10.0" prefHeight="11.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <TextField fx:id="usarioCorreo" prefHeight="39.0" prefWidth="172.0" GridPane.rowIndex="1" />
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuario o Correo" textAlignment="CENTER" wrappingWidth="228.205078125">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Contraseña" textAlignment="CENTER" wrappingWidth="232.205078125" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Text>
+                              <StackPane alignment="CENTER_RIGHT" prefHeight="150.0" prefWidth="200.0" GridPane.rowIndex="4">
+                                 <children>
+                                    <TextField fx:id="contrasenaLoginText" prefHeight="58.0" prefWidth="237.0" />
+                                    <PasswordField fx:id="contrasenaLogin" />
+                                    <CheckBox fx:id="checkContrasenaLogin" mnemonicParsing="false" onAction="#changeVisibility" />
+                                 </children>
+                              </StackPane>
+                           </children>
+                        </GridPane>
+                        <Button fx:id="confUsuario" layoutX="193.0" layoutY="314.0" mnemonicParsing="false" onAction="#confirmarUsuario" prefHeight="39.0" prefWidth="119.0" style="-fx-background-color: linear-gradient(to left,#889FD8,#113899 );" text="Enviar" textFill="WHITE">
+                           <effect>
+                              <InnerShadow blurType="TWO_PASS_BOX" choke="0.4" color="#320779" height="55.31" radius="47.6275" width="137.2" />
+                           </effect></Button>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#decfe3" height="432.0" layoutX="1.0" layoutY="3.0" stroke="BLACK" strokeType="INSIDE" width="26.0" />
+                        <TextField fx:id="errorField1" alignment="CENTER" layoutX="51.0" layoutY="59.0" prefHeight="39.0" prefWidth="403.0" style="visibility: hiden;">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

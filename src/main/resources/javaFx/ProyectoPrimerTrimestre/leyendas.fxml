@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="615.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaFx.ProyectoPrimerTrimestre.LeyendasController">
+   <children>
+      <SplitPane dividerPositions="0.21207177814029363" orientation="VERTICAL" prefHeight="615.0" prefWidth="1200.0" style="-fx-background-color: #2C2797;">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="102.0" prefWidth="1200.0">
+               <children>
+                  <ImageView fitHeight="135.0" fitWidth="1200.0" layoutX="-1.0" layoutY="-9.0" opacity="0.72" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../imagenes/galaxia2.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="267.0" fitWidth="497.0" layoutX="394.0" layoutY="-15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../imagenes/Titulo6.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="577.0" prefWidth="1200.0" style="-fx-background-color: linear-gradient(to left, #5B2C6F, #D2B4DE);">
+               <children>
+                  <HBox layoutX="-1.0" prefHeight="45.0" prefWidth="1200.0">
+                     <children>
+                        <Button fx:id="inicio" mnemonicParsing="false" onAction="#swichToIndex" prefHeight="44.0" prefWidth="302.0" style="-fx-background-color:linear-gradient(to top, #174A87,#A1C0C8 );" text="Inicio">
+                           <effect>
+                              <Lighting diffuseConstant="2.0" specularConstant="2.0" specularExponent="40.0" surfaceScale="10.0">
+                                 <bumpInput>
+                                    <Shadow blurType="GAUSSIAN" color="#0a0a0a" height="24.22" radius="11.6125" width="24.23" />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant azimuth="250.63" elevation="149.81" />
+                                 </light>
+                              </Lighting>
+                           </effect>
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="leyenda" mnemonicParsing="false" onAction="#swichToLeyendas" prefHeight="44.0" prefWidth="308.0" style="-fx-background-color: linear-gradient(to top, #174A87,#A1C0C8 );" text="Leyendas">
+                           <effect>
+                              <Lighting diffuseConstant="2.0" specularConstant="2.0" specularExponent="40.0" surfaceScale="10.0">
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant azimuth="250.63" elevation="149.81" />
+                                 </light>
+                              </Lighting>
+                           </effect>
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="crearLeyenda" mnemonicParsing="false" onAction="#swichToCrear" prefHeight="44.0" prefWidth="362.0" style="-fx-background-color: linear-gradient(to top, #174A87,#A1C0C8 );" text="Crear Leyendas">
+                           <effect>
+                              <Lighting diffuseConstant="2.0" specularConstant="2.0" specularExponent="40.0" surfaceScale="10.0">
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant azimuth="250.63" elevation="149.81" />
+                                 </light>
+                              </Lighting>
+                           </effect>
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Button>
+                        <StackPane prefHeight="45.0" prefWidth="301.0">
+                           <children>
+                              <Button fx:id="salir" mnemonicParsing="false" onAction="#swichToRegLogout" prefHeight="44.0" prefWidth="290.0" style="-fx-background-color: linear-gradient(to top, #174A87,#A1C0C8 );" text="Logout">
+                                 <effect>
+                                    <Lighting diffuseConstant="2.0" specularConstant="2.0" specularExponent="40.0" surfaceScale="10.0">
+                                       <bumpInput>
+                                          <Shadow />
+                                       </bumpInput>
+                                       <light>
+                                          <Light.Distant azimuth="250.63" elevation="149.81" />
+                                       </light>
+                                    </Lighting>
+                                 </effect>
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="registroLoguin" mnemonicParsing="false" onAction="#swichToRegLog" prefHeight="44.0" prefWidth="308.0" style="-fx-background-color: linear-gradient(to top, #174A87,#A1C0C8 );" text="Registro/Login">
+                                 <effect>
+                                    <Lighting diffuseConstant="2.0" specularConstant="2.0" specularExponent="40.0" surfaceScale="10.0">
+                                       <bumpInput>
+                                          <Shadow />
+                                       </bumpInput>
+                                       <light>
+                                          <Light.Distant azimuth="250.63" elevation="149.81" />
+                                       </light>
+                                    </Lighting>
+                                 </effect>
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </StackPane>
+                     </children>
+                  </HBox>
+                  <AnchorPane layoutX="-1.0" layoutY="44.0" prefHeight="435.0" prefWidth="1198.0">
+                     <children>
+                        <TableView fx:id="tabla" layoutX="121.0" layoutY="74.0" prefHeight="338.0" prefWidth="956.0">
+                           <effect>
+                              <DropShadow color="#20868a" height="0.0" radius="63.25" spread="0.34" width="255.0" />
+                           </effect>
+                        </TableView>
+                        <TextField fx:id="buscador" layoutX="252.0" layoutY="14.0" prefHeight="39.0" prefWidth="314.0" />
+                        <Text layoutX="144.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Buscador:" wrappingWidth="98.205078125">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="editar" layoutX="628.0" layoutY="8.0" mnemonicParsing="false" onAction="#editarBoton" prefHeight="49.0" prefWidth="183.0" style="-fx-background-color: linear-gradient(to left,#889FD8,#113899 );" text="Editar" textFill="WHITE">
+                           <effect>
+                              <InnerShadow blurType="TWO_PASS_BOX" choke="0.4" color="#320779ed" height="55.31" radius="47.6275" width="137.2" />
+                           </effect>
+                        </Button>
+                        <Button fx:id="borrar" layoutX="824.0" layoutY="9.0" mnemonicParsing="false" onAction="#borrarBoton" prefHeight="49.0" prefWidth="183.0" style="-fx-background-color: linear-gradient(to left,#889FD8,#113899 );" text="Borrar" textFill="WHITE">
+                           <effect>
+                              <InnerShadow blurType="TWO_PASS_BOX" choke="0.4" color="#320779ed" height="55.31" radius="47.6275" width="137.2" />
+                           </effect>
+                        </Button>
+                     </children></AnchorPane>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

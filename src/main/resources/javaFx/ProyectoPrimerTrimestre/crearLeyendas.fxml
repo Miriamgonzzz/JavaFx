@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="615.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaFx.ProyectoPrimerTrimestre.CrearLeyendaController">
+   <children>
+      <SplitPane dividerPositions="0.21207177814029363" orientation="VERTICAL" prefHeight="615.0" prefWidth="1200.0" style="-fx-background-color: #2C2797;">
+         <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="102.0" prefWidth="1200.0">
+               <children>
+                  <ImageView fitHeight="135.0" fitWidth="1200.0" layoutX="-1.0" layoutY="-9.0" opacity="0.72" pickOnBounds="true">
+                     <image>
+                        <Image url="@../../imagenes/galaxia2.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="267.0" fitWidth="497.0" layoutX="393.0" layoutY="-15.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../imagenes/Titulo6.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="577.0" prefWidth="1200.0" style="-fx-background-color: linear-gradient(to left, #5B2C6F, #D2B4DE);">
+               <children>
+                  <HBox layoutX="-1.0" prefHeight="45.0" prefWidth="1200.0">
+                     <children>
+                        <Button fx:id="inicio" mnemonicParsing="false" onAction="#swichToIndex" prefHeight="44.0" prefWidth="431.0" style="-fx-background-color:linear-gradient(to top, #174A87,#A1C0C8 );" text="Inicio">
+                           <effect>
+                              <Lighting diffuseConstant="2.0" specularConstant="2.0" specularExponent="40.0" surfaceScale="10.0">
+                                 <bumpInput>
+                                    <Shadow blurType="GAUSSIAN" color="#0a0a0a" height="24.22" radius="11.6125" width="24.23" />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant azimuth="250.63" elevation="149.81" />
+                                 </light>
+                              </Lighting>
+                           </effect>
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="leyenda" mnemonicParsing="false" onAction="#swichToLeyendas" prefHeight="44.0" prefWidth="459.0" style="-fx-background-color: linear-gradient(to top, #174A87,#A1C0C8 );" text="Leyendas">
+                           <effect>
+                              <Lighting diffuseConstant="2.0" specularConstant="2.0" specularExponent="40.0" surfaceScale="10.0">
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant azimuth="250.63" elevation="149.81" />
+                                 </light>
+                              </Lighting>
+                           </effect>
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="crearLeyenda" mnemonicParsing="false" onAction="#swichToCrear" prefHeight="44.0" prefWidth="530.0" style="-fx-background-color: linear-gradient(to top, #174A87,#A1C0C8 );" text="Crear Leyendas">
+                           <effect>
+                              <Lighting diffuseConstant="2.0" specularConstant="2.0" specularExponent="40.0" surfaceScale="10.0">
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant azimuth="250.63" elevation="149.81" />
+                                 </light>
+                              </Lighting>
+                           </effect>
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Button>
+                        <StackPane prefHeight="45.0" prefWidth="468.0">
+                           <children>
+                              <Button fx:id="salir" mnemonicParsing="false" onAction="#swichToRegLogout" prefHeight="44.0" prefWidth="467.0" style="-fx-background-color: linear-gradient(to top, #174A87,#A1C0C8 );" text="Logout">
+                                 <effect>
+                                    <Lighting diffuseConstant="2.0" specularConstant="2.0" specularExponent="40.0" surfaceScale="10.0">
+                                       <bumpInput>
+                                          <Shadow />
+                                       </bumpInput>
+                                       <light>
+                                          <Light.Distant azimuth="250.63" elevation="149.81" />
+                                       </light>
+                                    </Lighting>
+                                 </effect>
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="registroLoguin" mnemonicParsing="false" onAction="#swichToRegLog" prefHeight="44.0" prefWidth="467.0" style="-fx-background-color: linear-gradient(to top, #174A87,#A1C0C8 );" text="Registro/Login">
+                                 <effect>
+                                    <Lighting diffuseConstant="2.0" specularConstant="2.0" specularExponent="40.0" surfaceScale="10.0">
+                                       <bumpInput>
+                                          <Shadow />
+                                       </bumpInput>
+                                       <light>
+                                          <Light.Distant azimuth="250.63" elevation="149.81" />
+                                       </light>
+                                    </Lighting>
+                                 </effect>
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </StackPane>
+                     </children>
+                  </HBox>
+                  <AnchorPane layoutX="-4.0" layoutY="36.0" prefHeight="442.0" prefWidth="1207.0">
+                     <children>
+                        <Text fill="#230980" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Crear leyenda" textAlignment="CENTER" wrappingWidth="373.205078125">
+                           <font>
+                              <Font size="26.0" />
+                           </font>
+                           <effect>
+                              <DropShadow color="#660eae" height="52.46" radius="22.2975" spread="0.66" width="38.73">
+                                 <input>
+                                    <Glow level="0.08">
+                                       <input>
+                                          <Reflection bottomOpacity="0.03" fraction="0.47" topOpacity="0.55" />
+                                       </input>
+                                    </Glow>
+                                 </input>
+                              </DropShadow>
+                           </effect>
+                        </Text>
+                        <GridPane layoutX="342.0" layoutY="77.0" prefHeight="290.0" prefWidth="639.0">
+                           <children>
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre leyenda" textAlignment="CENTER" wrappingWidth="181.205078125">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="nombreLeyenda" prefHeight="0.0" prefWidth="424.0" GridPane.columnIndex="1" />
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Imagen" textAlignment="CENTER" wrappingWidth="176.205078125" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Descripcion" textAlignment="CENTER" wrappingWidth="188.205078125" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#fcfcfc" strokeType="OUTSIDE" strokeWidth="0.0" text="Fechas" textAlignment="CENTER" wrappingWidth="205.205078125" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Text>
+                              <DatePicker fx:id="fechaLeyenda" onAction="#mostrarLabel" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <TextArea fx:id="descripcionLeyenda" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <Button fx:id="subirimagen" mnemonicParsing="false" onAction="#elegirImagen" prefHeight="40.0" prefWidth="210.0" style="-fx-background-color: linear-gradient(to left,#889FD8,#113899 );" text="Selleccion imagen" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <effect>
+                                    <InnerShadow blurType="TWO_PASS_BOX" choke="0.4" color="#320779ed" height="55.31" radius="47.6275" width="137.2" />
+                                 </effect>
+                              </Button>
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="319.0" minWidth="10.0" prefWidth="151.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="433.0" minWidth="10.0" prefWidth="424.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="277.0" minHeight="0.0" prefHeight="59.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="427.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="528.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="528.0" minHeight="10.0" prefHeight="51.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="528.0" minHeight="0.0" prefHeight="12.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="528.0" minHeight="1.0" prefHeight="1.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="528.0" minHeight="0.0" prefHeight="12.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="528.0" minHeight="10.0" prefHeight="95.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                        <TextField fx:id="errorField" layoutX="437.0" layoutY="356.0" prefHeight="49.0" prefWidth="555.0" style="visibility: hiden;" />
+                        <Label fx:id="labelFecha" layoutX="819.0" layoutY="174.0" prefHeight="40.0" prefWidth="163.0" />
+                        <Label fx:id="rutaArchivo" layoutX="770.0" layoutY="133.0" prefHeight="27.0" prefWidth="313.0" />
+                     </children>
+                  </AnchorPane>
+                  <Button fx:id="enviarLeyenda" layoutX="87.0" layoutY="402.0" mnemonicParsing="false" onAction="#swichtEnviarLeyenda" prefHeight="49.0" prefWidth="183.0" style="-fx-background-color: linear-gradient(to left,#889FD8,#113899 );" text="Enviar" textFill="WHITE">
+                     <effect>
+                        <InnerShadow blurType="TWO_PASS_BOX" choke="0.4" color="#320779ed" height="55.31" radius="47.6275" width="137.2" />
+                     </effect>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
